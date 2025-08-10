@@ -35,8 +35,8 @@
     /* Main content */
     main {
       max-width: 800px;
-      margin: 60px auto;
-      padding: 20px;
+      margin: 20px auto 40px auto;
+      padding: 10px;
       text-align: left;
     }
 
@@ -64,9 +64,52 @@
       display: table;
       clear: both;
     }
+    .background-img {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      z-index: -1;
+    }
+
+    .text-box {
+      background-color: #004765c7; /* semi-transparent background only for text */
+      border-radius: 10px;
+      padding: 20px;
+      text-align: left;
+      position: relative;
+      margin: 0 auto;
+    }
+
+    a {
+      color: #93f5d0;
+    }
+
+    .email-button {
+      display: inline-block;
+      margin: 20px auto 0 auto;
+      padding: 12px 24px;
+      font-size: 1.2em;
+      color: #004466;
+      background-color: #93f5d0;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      text-align: center;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background-color 0.3s ease;
+    }
+
+
+    .email-button:hover {
+      background-color: #75d9b9;
+    }
   </style>
 </head>
 <body>
+  <img src="cvnp_map_big_blur.jpg" alt="" class="background-img">
 
   <!-- Navigation -->
   <nav>
@@ -76,12 +119,19 @@
   <!-- Main Content -->
   <main>
     <div class="about-wrapper">
-      <img src="profilepicture_placeholder.jpg" alt="Luke Van de Walle" class="profile-image">
-      <h1>About Me</h1>
-      <p>Welcome! I'm Luke. With an educational background in Political Science and Data Science and professional experience in GIS data production, I am passionate about finding ways to leverage GIS tools for policy goals, bridging the gap between technical expertise and the communities technology is serving.</p>
-      <p>As I look towards the future, I am excited to continue to build my GIS skills and work in the industry. Currently, I am refining my Python scripting skills to enhance my ability to create repeatable and accessible GIS workflows in different environments. My goal is to use these programming and GIS skills to better inform constituents about the effects and potential responses to new legislation, climate change, and broader societal challenges. I aim to support data-driven decision-making that empowers communities and promotes equitable policy outcomes.</p>
+      <div class="text-box">
+        <img src="profile_pic.jpg" alt="Luke Van de Walle" class="profile-image">
+        <h1>About Me</h1>
+        <p>Welcome! I'm Luke. With an educational background in Political Science and Data Science and professional experience in GIS data production, I am passionate about finding ways to leverage GIS tools for policy goals, bridging the gap between technical expertise and the communities technology is serving.</p>
+        <p>As I look towards the future, I am excited to continue to build my GIS skills and work in the industry. Currently, I am refining my Python scripting skills to enhance my ability to create repeatable and accessible GIS workflows in different environments. My goal is to use these programming and GIS skills to better inform constituents about the effects and potential responses to new legislation, climate change, and broader societal challenges. I aim to support data-driven decision-making that empowers communities and promotes equitable policy outcomes.</p>
+        <p>Outside of professional application, I enjoy making maps of parks I have visited, visualizing backpacking trips I have completed, or applying GIS to the natural world around me. I am currently working on a data dashboard for <a href="https://www.birdweather.com/birdnetpi">BirdNET-Pi</a> station I set up on a Raspberry Pi 0 W 2 and a spare microphone; coming soon to my portfolio!</p>
+      </div>
+    </div>
+
+    <!-- Email Button -->
+    <div style="text-align: center;">
+      <a href="mailto:l.vandewalle17@gmail.com?subject=Let%27s%20chat%21" class="email-button">Let's chat!</a>
     </div>
   </main>
-
 </body>
 </html>

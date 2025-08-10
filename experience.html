@@ -5,17 +5,22 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Experience - Luke Van de Walle</title>
   <style>
+    * {
+      box-sizing: border-box;
+    }
+
     body {
       font-family: Garamond, serif;
       margin: 0;
       padding: 0;
       background-color: #004466;
       color: white;
+      position: relative;
     }
 
     nav {
       text-align: center;
-      background-color: #003355;
+      background-color: #003355cc;
       padding: 10px 0;
     }
 
@@ -32,42 +37,77 @@
     }
 
     main {
-      max-width: 800px;
-      margin: 60px auto;
-      padding: 20px;
+      padding: 60px 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .text-box {
+      background-color: #00557a9e;
+      padding: 30px;
+      border-radius: 10px;
+      width: fit-content;
+      max-width: 600px;
+      margin: 20px auto;
       text-align: center;
     }
 
     h1 {
       font-size: 2.5em;
+      margin: 0;
+      text-align: center;
+    }
+
+    p {
+      font-size: 1.2em;
+      line-height: 1.6em;
+      margin-bottom: 20px;
     }
 
     .resume-link {
-      display: inline-block;
-      margin-top: 20px;
+      display: block;
+      margin: 0 auto;
       padding: 12px 20px;
       background-color: #00557a;
       color: white;
       text-decoration: none;
       border-radius: 5px;
+      font-size: 1em;
+      width: fit-content;
     }
 
     .resume-link:hover {
       background-color: #007399;
     }
+
+    .background-img {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      z-index: -1;
+    }
   </style>
 </head>
 <body>
+  <img src="cvnp_map_big_blur.jpg" alt="" class="background-img">
 
   <nav>
     <a href="index.html">← Back to Home</a>
   </nav>
 
   <main>
-    <h1>Experience</h1>
-    <p>Click below to view or download my resume:</p>
+    <div class="text-box">
+      <h1>Experience</h1>
+    </div>
+
+    <div class="text-box">
+      <p>Early-career GIS professional with a strong foundation in geospatial analysis, Python scripting, and spatial data visualization. Experienced in building and maintaining GIS datasets, automating workflows using ArcPy, and creating interactive web maps to support data-driven decision-making. Skilled in applying GIS tools to real-world challenges across urban development, public policy, and nonprofit contexts. Known for a detail-oriented and collaborative approach, with a strong interest in using geospatial technology to inform equitable policies and enhance community engagement.</p>
+      <p>Click below to view or download my resume</p>
+    </div>
     <a href="resume.pdf" class="resume-link" target="_blank">View My Resume (PDF)</a>
   </main>
-
 </body>
 </html>

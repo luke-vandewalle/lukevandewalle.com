@@ -5,21 +5,36 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>My Portfolio</title>
   <style>
+    * {
+      box-sizing: border-box;
+    }
+
     body {
       font-family: Garamond, serif;
       margin: 0;
       padding: 0;
       color: white;
-      background-image: url('homepage_placeholder.jpg');
-      background-repeat: no-repeat;
-      background-attachment: fixed;
-      background-size: cover;
+      background-color: #004466;
+      position: relative;
     }
 
-    /* Navigation Menu - Centered */
+    /* Fullscreen background image */
+    .background-img {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      z-index: -1;
+    }
+
+    /* Navigation Menu */
     nav {
       text-align: center;
       padding: 10px 0;
+      background-color: #003355cc; /* semi-transparent dark blue */
+      position: relative;
+      z-index: 1;
     }
 
     nav a {
@@ -37,26 +52,37 @@
 
     /* Centered Header Content */
     header {
-      height: 100vh; /* Full viewport height */
+      height: 100vh;
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
       text-align: center;
+      padding: 20px;
+      position: relative;
+      z-index: 1;
     }
 
-    header h1 {
-      font-size: 3em;
-      margin-bottom: 10px;
-    }
-
-    header p {
-      font-size: 1.5em;
+    .text-box {
+      background-color: #00557a90; /* semi-transparent background only for text */
+      padding: 30px;
+      border-radius: 10px;
       max-width: 600px;
+    }
+
+    .text-box h1 {
+      font-size: 3em;
+      margin: 0 0 10px 0;
+    }
+
+    .text-box p {
+      font-size: 1.5em;
+      margin: 0;
     }
   </style>
 </head>
 <body>
+  <img src="cvnp_map_big_blur.jpg" alt="" class="background-img">
 
   <!-- Navigation Menu -->
   <nav>
@@ -67,8 +93,10 @@
 
   <!-- Centered Header -->
   <header>
-    <h1>Luke Van de Walle</h1>
-    <p>Passionate about GIS, public policy, and their intersection.</p>
+    <div class="text-box">
+      <h1>Luke Van de Walle</h1>
+      <p>Passionate about GIS, public policy, and their intersection.</p>
+    </div>
   </header>
 
 </body>
