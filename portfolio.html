@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portfolio - Luke Van de Walle</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      font-family: Garamond, serif;
+      color: white;
+      position: relative;
+    }
+
+    /* Fullscreen background image */
+    .background-img {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      z-index: -1;
+    }
+
+    .text-box {
+      background-color: #00557a90; /* semi-transparent background only for text */
+      padding: px;
+      border-radius: 10px;
+      max-width: 300px;
+      text-align: center;
+      position: relative;
+      margin: 0 auto;
+    }
+    nav {
+      text-align: center;
+      background-color: #003355cc; /* semi-transparent */
+      padding: 10px 0;
+      position: relative;
+      z-index: 1;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      padding: 12px 18px;
+      font-size: 18px;
+    }
+
+    nav a:hover {
+      background-color: #00557a;
+      border-radius: 4px;
+    }
+
+    main {
+      max-width: 800px;
+      margin: 60px auto;
+      padding: 20px;
+      border-radius: 8px;
+      position: relative;
+      z-index: 1;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 2.5em;
+    }
+
+    .project {
+      margin-bottom: 30px;
+      background-color: #006688cc; /* another semi-transparent option */
+      padding: 20px;
+      border-radius: 8px;
+    }
+
+    .project h2 {
+      margin-top: 0;
+    }
+
+    .project a {
+      color: #ffe;
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Fullscreen background image -->
+  <img src="cvnp_map_big_blur.jpg" alt="" class="background-img">
+
+  <nav>
+    <a href="index.html">← Back to Home</a>
+  </nav>
+
+  <main>
+    <div class="text-box">
+      <h1>Portfolio</h1>
+    </div>
+
+    <div class="project">
+      <h2>Northern Indiana Poverty Dashboard</h2>
+      <p>An interactive map showing poverty levels as measured by the ALICE (Asset limited, Asset constrained, Employed) methodology. While the ALICE methodology was used, all data collection, analysis, and webmapping was completed by me.</p>
+      <p><a href="https://experience.arcgis.com/experience/6d08836a217a4e1084204df8473fb456/page/Home---ALICE-Gap" target="_blank">View Project</a></p>
+    </div>
+
+    <div class="project">
+      <h2>Northern Indiana Cost of Living Calculator</h2>
+      <p>A dashboard to calculate the cost of living in Northern Indiana based on household size, using ALICE economic data.</p>
+      <p><a href="https://l-vandewalle.shinyapps.io/COLCalc/" target="_blank">View Project</a></p>
+    </div>
+
+    <div class="project">
+      <h2>Model for New Urban Agriculture Sites (Washington, D.C.)</h2>
+      <p>Created a GIS methodology to find the best sites for new Urban Agriculture investment. With limited funds, it is important to ensure that new sites are accessible, equitable, and productive.</p>
+      <p><a href="https://storymaps.arcgis.com/stories/c2f219a56410402d8c2da8af39b23301" target="_blank">View Project</a></p>
+    </div>
+
+    <!-- Add more projects as needed -->
+
+  </main>
+
+</body>
+</html>

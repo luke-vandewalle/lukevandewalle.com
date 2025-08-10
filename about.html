@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About Me - Luke Van de Walle</title>
+  <style>
+    body {
+      font-family: Garamond, serif;
+      margin: 0;
+      padding: 0;
+      background-color: #004466;
+      color: white;
+    }
+
+    /* Navigation */
+    nav {
+      text-align: center;
+      background-color: #003355;
+      padding: 10px 0;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      padding: 12px 18px;
+      font-size: 18px;
+    }
+
+    nav a:hover {
+      background-color: #00557a;
+      border-radius: 4px;
+    }
+
+    /* Main content */
+    main {
+      max-width: 800px;
+      margin: 60px auto;
+      padding: 20px;
+      text-align: left;
+    }
+
+    .profile-image {
+      float: left;
+      width: 200px;
+      margin-right: 25px;
+      margin-bottom: 10px;
+      border-radius: 8px;
+    }
+
+    h1 {
+      font-size: 2.5em;
+      margin-top: 0;
+    }
+
+    p {
+      font-size: 1.2em;
+      line-height: 1.6em;
+    }
+
+    /* Clearfix for floated image */
+    .about-wrapper::after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav>
+    <a href="index.html">← Back to Home</a>
+  </nav>
+
+  <!-- Main Content -->
+  <main>
+    <div class="about-wrapper">
+      <img src="profilepicture_placeholder.jpg" alt="Luke Van de Walle" class="profile-image">
+      <h1>About Me</h1>
+      <p>Welcome! I'm Luke. With an educational background in Political Science and Data Science and professional experience in GIS data production, I am passionate about finding ways to leverage GIS tools for policy goals, bridging the gap between technical expertise and the communities technology is serving.</p>
+      <p>As I look towards the future, I am excited to continue to build my GIS skills and work in the industry. Currently, I am refining my Python scripting skills to enhance my ability to create repeatable and accessible GIS workflows in different environments. My goal is to use these programming and GIS skills to better inform constituents about the effects and potential responses to new legislation, climate change, and broader societal challenges. I aim to support data-driven decision-making that empowers communities and promotes equitable policy outcomes.</p>
+    </div>
+  </main>
+
+</body>
+</html>
